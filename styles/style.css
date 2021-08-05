@@ -5,20 +5,24 @@ body{
     background-color: #FFFFFF;
     font-family: 'Poppins', sans-serif;
 }
-.header-part{
-    width: 1440px;
-    height:677px;
-    display: none;
+main{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 .container{
     width: 1050px;
     margin-top: 27px;
+    margin-left: 180px;
+    margin-right: 210px;
 }
 .players-first-part{
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    margin-left: 180px;
     grid-column-gap: 30px;
+    justify-content: center;
+    align-items: center;
 }
 .player{
     width: 330px;
@@ -52,13 +56,14 @@ h3{
 .players{
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    margin-left: 180px;
     grid-column-gap: 30px;
+    justify-content: center;
 }
 footer{
     display: grid;
     justify-content: center;
     justify-items: center;
+    align-items: center;
    
 }
 .footer{
