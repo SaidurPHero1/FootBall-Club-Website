@@ -369,8 +369,8 @@ Main part Start
 .players-first-part, .players-second-part, .players-third-part, .players-fourth-part, .schedules, .winners{
     grid-template-columns: repeat(1,1fr);
     grid-row-gap: 24px;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 .players-first-part{
     margin-top: 47px;
