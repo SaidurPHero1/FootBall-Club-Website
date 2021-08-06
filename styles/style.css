@@ -33,21 +33,24 @@ header{
     padding-top: 50px;
 }
 .half-width{
-    width: 50%;
-    
+    width: 50%; 
 }
 h1{
     font-size: 64px;
     font-weight: 700;
     color: white;
     line-height: 80px;
+    transition: font-size 3s, transfrom 3s;
+}
+/* hover over h1 font*/
+h1:hover{
+    font-size: 80px;
 }
 .link-button{
     background-color: #E02C6D;
     height: 44px;
     width: 168px;
     display: flex;
-    margin-left: 48px; 
 }
 .link-button a{
     color: #FFFFFF;
@@ -66,8 +69,19 @@ h1{
 .half-width img{
     width: 556px;
     height: 438px;
+    transition: width 3s, height 3s,  transform 3s;
+}
+/*---------------- 
+hover over img 
+-----------------------*/
+.half-width img:hover{
+    width: 630px;
+    height: 500px;
 }
 /* Header Styles End */
+
+
+
 /* Main Part styles Start */
 .players-first-part{
     display: grid;
@@ -105,7 +119,7 @@ h3{
     width: 330px;
     height: 256px;
 }
-.players{
+.players-second-part, .players-third-part, .players-fourth-part{
     display: grid;
     grid-template-columns: repeat(3,1fr);
     grid-column-gap: 30px;
@@ -114,7 +128,7 @@ h3{
 /* Main Parts Styles Ends */
 /* Footer Styles Start */
 footer{
-    display: grid;
+    display: flex;
     justify-content: center;
     justify-items: center;
     align-items: center;
@@ -144,3 +158,91 @@ h4{
     font-size: 18px;
 }
 /* Footer Styles End */
+/*---------------------- Media Quraries Part Styles -----------------*/
+/* --------------------Mobile Device---------------------- */
+@media only screen and (max-width:688px){
+   /* Header Part Start */
+header{
+    width: 100%;
+    height: 695px;
+    background: #2D25A0;
+}
+.header-part{
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+    }
+.half-width{
+    margin-top:50px ;
+    width: 100%; 
+}
+.half-width img{
+    width: 329px; 
+    height: 259.17px;
+    transition: width 3s, height 3s, transform 3s;
+    }
+.half-width img:hover{
+    width: 350px;
+    height: 300px;
+    }
+h1{
+    font-size: 36px;
+    font-weight: 700;
+    color: white;
+    line-height: 50px;
+    transition: font-size 3s , transform 3s;
+}
+/* hover over h1 font */
+h1:hover{
+    font-size: 45px;
+}
+/* Header Part End */
+/* ---------------------------
+Main part Start
+----------------- */
+.container{
+    width: 100%;
+    margin-top: 24px;
+    margin-left: 0;
+    margin-right: 0;
+}
+.players-first-part, .players-second-part, .players-third-part, .players-fourth-part{
+    grid-template-columns: repeat(1,1fr);
+    grid-row-gap: 24px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.players-first-part{
+    margin-top: 47px;
+}
+.player.ronaldo{
+    width: 330px;
+    height: 474px;
+    margin-top: 0;
+    opacity: 100%;
+}
+/*-------------------- 
+main part end
+-------------------- */
+
+/* Footer part start */
+.footer{
+    width:100%;
+    height: 213px;
+    margin-bottom: 63px;
+    margin-top: 43px;
+}
+.footer-info{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    justify-items: center;
+    align-items: center;
+}
+.logo img{
+    width: 275px;
+    height: 63px;
+}
+/* Foter part end */
+}
