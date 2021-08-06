@@ -4,6 +4,7 @@
 body{
     background-color: #FFFFFF;
     font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
 }
 main{
     display: flex;
@@ -118,6 +119,7 @@ h3{
     width: 330px;
     height: 256px;
 }
+/* common styles */
 .players-second-part, .players-third-part, .players-fourth-part{
     display: grid;
     grid-template-columns: repeat(3,1fr);
@@ -142,7 +144,7 @@ h3{
     display: flex;
     flex-direction: column;
     justify-items: center;
-    font-size: 25px;
+    font-size: 20px;
     background-color: wheat;
     padding: 10px;
     border-radius: 10px;
@@ -176,10 +178,14 @@ h3{
     display: flex;
     flex-direction: column;
     justify-items: center;
-    font-size: 25px;
+    font-size: 20px;
+    font-weight: bold;
     background-color: aqua;
     padding: 10px;
     border-radius: 10px;
+}
+.fa-trophy{
+    color: goldenrod;
 }
 /* champion list styles end */
 
@@ -219,7 +225,110 @@ h5{
     margin-top: 20px;
 }
 /* Footer Styles End */
-/* media quaries */
+/* ----------------------media quaries------------------------- */
+/*------------------- 
+Mobiles divices
+------------------- */
+@media only screen and (max-width:688px) {
+header{
+    width: 100%;
+    height: 695px;
+    background: #2D25A0;
+}
+.header-part{
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+    padding: 15px;
+    }   
+.half-width{
+    margin-top:50px ;
+    width: 100%; 
+}    
+.half-width img{
+    width: 329px; 
+    height: 259.17px;
+    transition: width 3s, height 3s, transform 3s;
+    }
+.half-width img:hover{
+    width: 350px;
+    height: 300px;
+    }
+h1{
+    font-size: 36px;
+    font-weight: 700;
+    color: white;
+    line-height: 50px;
+    transition: font-size 3s , transform 3s;
+}
+/* hover over h1 font */
+h1:hover{
+    font-size: 45px;
+}
+/* Header Part End */
+/* ---------------------------
+Main part Start
+----------------- */
+.container{
+    width: 100%;
+    margin-top: 24px;
+    margin-left: 0;
+    margin-right: 0;
+}
+.players-first-part, .players-second-part, .players-third-part, .players-fourth-part, .schedules, .winners{
+    grid-template-columns: repeat(1,1fr);
+    grid-row-gap: 24px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.players-first-part{
+    margin-top: 47px;
+}
+.player{
+    width: 330px;
+    padding: 15px;
+    height: 474px;
+}
+.player img{
+    width: 330px;
+    height: 256px;
+}
+.player.ronaldo{
+    width: 330px;
+    height: 474px;
+    margin-top: 0;
+    opacity: 100%;
+}
+/* common Styles */
+.section-title{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+}
+/* Footer part start */
+.footer{
+    width:100%;
+    height: 213px;
+    margin-bottom: 63px;
+    margin-top: 43px;
+}
+.footer-info{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    justify-items: center;
+    align-items: center;
+}
+.logo img{
+    width: 275px;
+    height: 63px;
+}
+/* Foter part end */
+}
+
+ /*------------------ Iphone 5s
+ -------------------------------- */
 @media only screen and (max-width:320px){
     /* Header Part Start */
  header{
@@ -280,11 +389,7 @@ Main part Start
 }
 .player{
     width: 300px;
-    height: 474px;
-    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
     padding: 10px;
-    background-color: #FFFFFF;
-    padding-bottom: 33px;
 }
 .player img{
     width: 300px;
