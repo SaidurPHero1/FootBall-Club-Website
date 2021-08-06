@@ -101,12 +101,6 @@ h3{
     margin-top: 16px;
     margin-bottom: 10px;
 }
-.player.ronaldo{
-    width: 330px;
-    height: 456px;
-    margin-top: 4px;
-    opacity: 40%;
-}
 /* players blog */
 .blogs .blog-text{
     font-family: 'Poppins', sans-serif;
@@ -295,12 +289,6 @@ Main part Start
     width: 330px;
     height: 256px;
 }
-.player.ronaldo{
-    width: 330px;
-    height: 474px;
-    margin-top: 0;
-    opacity: 100%;
-}
 /* common Styles */
 .section-title{
     text-align: center;
@@ -394,12 +382,6 @@ Main part Start
 .player img{
     width: 300px;
     height: 256px;
-}
-.player.ronaldo{
-    width: 300px;
-    height: 474px;
-    margin-top: 0;
-    opacity: 100%;
 }
 /* common Styles */
 .section-title{
